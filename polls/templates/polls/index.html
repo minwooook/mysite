@@ -1,0 +1,12 @@
+<ul>
+{% for q in question %}
+    <li>
+        <a href="{{ q.id }}/detail"> <!-- 상대경로 ==  현재경로 + 입력된경로 -->
+        {{ q.question_text }}
+        </a>
+
+
+    </li>
+
+{% endfor %}
+</ul>
